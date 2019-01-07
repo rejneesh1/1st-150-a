@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Number Between Ranges</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function check(x, y, n) {
+            if (n < 40 || n > 10000)
+                return false;
+            else
+            if (n >= x && n <= y)
+                return true;
+            else
+                return false;
+        }
+        alert(check(40, 4000, 45));
+        alert(check(80, 320, 79));
+        alert(check(89, 4000, 30));
+    </script>
+</body>
+
+</html>

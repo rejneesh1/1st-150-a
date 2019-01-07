@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Same last digit</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function lastDigit(num1, num2, num3) {
+            return (num1 % 10 === num2 % 10) ||
+                (num1 % 10 === num3 % 10) ||
+                (num2 % 10 === num3 % 10);
+
+        }
+
+        alert(lastDigit(12, 22, 42));
+        alert(lastDigit(55, 65, 45));
+        alert(lastDigit(10, 22, 25));
+
+    </script>
+</body>
+
+</html>

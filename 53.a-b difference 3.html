@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>a-b difference 3</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function check(str) {
+            var a = str.indexOf('a');
+            var b = str.indexOf('b');
+            var res = "";
+            if ((a - b == 3) || (b - a == 3)) {
+                res = true;
+                return res;
+            } else {
+                return false;
+            }
+        }
+        alert(check("booa"));
+        alert(check("aoob"));
+        alert(check("aoooob"));
+    </script>
+</body>
+
+</html>

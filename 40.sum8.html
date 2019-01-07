@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Check sum</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function check(x, y) {
+            var sum = x + y;
+            var diff = Math.abs(x - y);
+
+            if (x == 8 || y == 8) {
+                return true;
+            } else if (sum == 8 || diff == 8) {
+                return true;
+            } else {
+                return false;
+            }
+
+        }
+
+        alert(check(20,10));
+        alert(check(4,4));
+        alert(check(18,8));       
+    </script>
+</body>
+
+</html>

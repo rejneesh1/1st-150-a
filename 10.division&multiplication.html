@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Division and Multiplication</title>
+    <style>
+        section{
+            background-color: #c1c1c1;
+            width:32%;
+            position: absolute;
+            top:20%;
+            left:20%;
+            height:25%;
+        }
+
+        h3{
+            padding: 0;
+            margin:0;
+            display: inline-block;
+        }
+        
+        input[type=button]{
+            
+            background-color: yellow;
+            width:216px;
+        }
+
+        section h4{
+            text-align: center;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h3>No.1</h3>
+            <input id="no1" type="number">
+            <h3>No.2</h3>
+            <input id="no2" type="number">
+            <input  onclick="multiply()" type="button" name="multiply" value="Multiply">
+            <input  onclick="divide()" type="button" name="divide" value="Divide">
+            <h4 id="result"></h4>
+        </section>
+    </main>
+    <script>
+
+        
+        
+        function multiply() {
+            var x=document.getElementById('no1').value;
+            var y=document.getElementById('no2').value;
+            var res=x*y;
+            document.getElementById('result').innerHTML=res;
+        }
+        function divide() {
+            
+            var x=document.getElementById('no1').value;
+            var y=document.getElementById('no2').value;
+            var res=x/y;
+            document.getElementById('result').innerHTML=res;
+        }
+    </script>
+</body>
+
+</html>
+            
+        
+        
+
+            

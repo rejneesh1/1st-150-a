@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sum</title>
+</head>
+
+<body>
+    Result: <span id="result"></span>
+</body>
+<script>
+    var x = prompt("enter number 1")
+    var y = prompt("enter number 2")
+    document.getElementById('result').innerHTML = sum(x,y)
+
+    function sum(x, y) {
+        if (x == y) {
+            return 3 * (x + y);
+        } else {
+            return (x + y);
+        }
+    }
+</script>
+
+</html>

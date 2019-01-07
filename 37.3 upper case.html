@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>3 upper case letter</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function lower(string) {
+            if (string.length < 3) {
+                return string.toUpperCase();
+            }
+            fp = (string.substring(0, 3)).toLowerCase();
+            bp = string.substring(3, string.length);
+            return fp + bp;
+        }
+        alert(lower("REJNEESH"));
+        alert(lower("IND"));
+        alert(lower("GUJrat"));
+    </script>
+</body>
+
+</html>

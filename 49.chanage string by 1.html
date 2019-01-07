@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Increase character by 1</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function replace(str) {
+            var newstr = '';
+            for (let i = 0; i < str.length; i++) {
+                var code = str.charCodeAt(i);
+                var letter = String.fromCharCode(code + 1);
+                newstr += letter;
+            }
+            return newstr;
+        }
+        console.log(replace('my name'));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Temperature Conversion</title>
+</head>
+
+<body>
+    <main>
+        Input your value: <input type="text" id="degrees" />
+        <button onclick="cToF()">Calculate Fahrenheit</button>
+        <button onclick="fToC()">Calculate Celsius</button>
+        Result: <span id="result"></span>
+    </main>
+   
+    <script>
+        function cToF() {
+            var c = document.getElementById('degrees').value;
+            var f = c * 9 / 5 + 32;
+            document.getElementById('result').innerHTML = c + " ° Celsius is " + f + " ° Fahrenheit";
+        }
+
+        function fToC() {
+            var f = document.getElementById('degrees').value;
+            var c = (f - 32) * 5 / 9;
+            document.getElementById('result').innerHTML = f + " ° Fahrenheit is " + c + " ° Celsius";
+        }
+    </script>
+</body>
+
+</html>

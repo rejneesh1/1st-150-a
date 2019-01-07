@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Area of Triangle</title>
+</head>
+<body>
+	<main>
+		
+		
+
+	</main>
+
+	<script>
+		var a=Math.abs(prompt("Enter side 'A' of Triangle"));// to convert string to number
+		var b=Math.abs(prompt("Enter side 'B' of Triangle"));
+		var c=Math.abs(prompt("Enter side 'C' of Triangle"));
+		var s= (a+b+c)/2;
+		var area=Math.sqrt(s*((s-a)*(s-b)*(s-c)));
+		document.write("Area of Triangle with side " + a + "," + b + "," + c + " is " + area );
+		
+		
+	</script>
+</body>
+</html>

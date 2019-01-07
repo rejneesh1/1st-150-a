@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		function checkarr(checkarr1,checkarr2)
+		 {
+			for( var i=0;i<checkarr1.length;i++)
+			{
+				for( var j=1;j<checkarr2.length;j++)
+				{
+					var re = true;
+					temp = checkarr1[i];
+					checkarr1[i]=checkarr1[j];
+					checkarr1[j]=temp;
+					for(var k=0;k<checkarr1.length;k++)
+					{
+						if(checkarr1[k]!=checkarr2[k])
+						{
+							re = false;
+							break;
+						}
+					}
+					if(re)
+					{
+						return true;
+					}
+					checkarr1[j] = checkarr1[i];
+					checkarr1[i]  = temp;				}
+			}
+			return false;
+		}
+		alert(checkarr([10,15,20],[10,15,20]));
+	</script>
+
+</body>
+</html>

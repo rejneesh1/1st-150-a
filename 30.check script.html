@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Check "Script"</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function check(str) {
+            if (str.length < 6) {
+                return str;
+            }
+            var result = str;
+
+            if (str.substring(10, 4) == 'Script') {
+
+                result = str.substring(0, 4) + str.substring(10, str.length);
+
+            }
+            return result;
+        }
+
+        alert(check("JavaScript"));
+        alert(check("zenraysScript"));
+        alert(check("zenrScript"));
+        alert(check("rejnScript"));
+    </script>
+</body>
+
+</html>

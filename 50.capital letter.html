@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>start with capital letter</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function capital(str) {
+            var res = str.split(" ");
+            for (var i = 0; i < res.length; i++) {
+                res[i] = res[i].charAt(0).toUpperCase() + res[i].substring(1);
+            }
+            return res.join(' ');
+        }
+        alert(capital("i am going to capitalise the first letter"));
+    </script>
+</body>
+
+</html>

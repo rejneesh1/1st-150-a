@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>last digit is same</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function last(x, y, z) {
+            if ((x > 0) && (y > 0) && (z > 0)) {
+                return (x % 10 == y % 10 && y % 10 == z % 10 && x % 10 == z % 10);
+            } else
+                return false;
+        }
+
+        alert(last(22, 30, 41));
+        alert(last(51, 61, 401));
+        alert(last(20, -30, 22));
+        alert(last(20, 30, -50));
+    </script>
+</body>
+
+</html>

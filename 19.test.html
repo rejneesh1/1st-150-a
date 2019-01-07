@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Difference</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function test(x) {
+            return ((Math.abs(100 - x) <= 20) ||
+                (Math.abs(400 - x) <= 20));
+        }
+
+        alert(test(101));
+        alert(test(55));
+        alert(test(10));
+        alert(test(551));
+        alert(test(10));
+    </script>
+</body>
+
+</html>

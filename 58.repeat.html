@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>repeat string</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function repeat(str) {
+            if (str.length >= 3) {
+                result_str = str.substring(str.length - 3);
+                return result_str + result_str + result_str + result_str;
+            } else
+                return false;
+        }
+        alert(repeat("rejneesh"));
+        alert(repeat("1"));
+        alert(repeat("india"));
+    </script>
+</body>
+
+</html>

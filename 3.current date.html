@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Current date</title>
+	<script>
+	    var dt= new Date();
+	    function printDate(){
+	      d=dt.getDate();
+	      if(d<10){
+	        d="0" + d;
+	      }
+	      
+	      m=dt.getMonth()+1;
+	      if(m<10){
+	        m="0" + m;
+	      }
+	      
+	      y=dt.getFullYear();
+	      if(y<10){
+	        y="0" + y;
+	      }
+	    document.write("Today's Date is " + d + "/"+ m + "/" + y)  
+	    }
+	</script>    
+</head>
+<body onload="printDate()">
+
+</body>
+</html>

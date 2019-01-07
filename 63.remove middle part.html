@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>remove middle part</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function remove(str) {
+            if (str.length % 2 != 0) {
+
+                mid = (str.length + 1) / 2;
+                return str.slice(mid - 2, mid + 1);
+            }
+            return str;
+        }
+        alert(remove('rejneesh'));
+        alert(remove('zenrays'));
+        alert(remove('india'));
+        alert(remove('ab'));
+        alert(remove('123456789'));
+    </script>
+</body>
+
+</html>

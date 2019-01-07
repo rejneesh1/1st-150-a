@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Increasing</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function increase(x, y, z) {
+            if (x < y && y < z) {
+                return "Strict mode";
+            } else if (x < z || y < z) {
+                return "Soft mode";
+            } else {
+                return false;
+            }
+
+        }
+        alert(increase(1, 2, 3));
+        alert(increase(1, 0, 3));
+        alert(increase(5, 2, 1));
+    </script>
+</body>
+
+</html>

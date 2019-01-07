@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>check for 30 and 40</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function check(intArray) {
+
+            if (intArray.length <= 2) {
+                if (intArray[0] == 30 && intArray[1] == 30 || intArray[0] == 40 && intArray[1] == 40) {
+                    return true;
+                } else {
+                    return false;
+                }
+            } else {
+                return false;
+            }
+
+        }
+
+        alert(check([20,40]))
+        alert(check([20,50]))
+        alert(check([30,40]))
+        alert(check([30,30]))
+        alert(check([40,40]))
+    </script>
+
+</body>
+
+</html>

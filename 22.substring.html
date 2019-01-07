@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Positive and negative</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function substring(string, index) {
+            if (string.length < index || index < 0) {
+                return 'Invalid character index'
+            } else if (index == 0) {
+                return string;
+            } else {
+                return string.slice(0, index - 1) + string.slice(index);
+            }
+        }
+
+        alert(substring('abcdefghijkl', 0));
+        alert(substring('abcdefghijkl', 1));
+        alert(substring('abcdefghijkl', 4));
+        alert(substring('abcdefghijkl', 11));
+        alert(substring('abcdefghijkl', 12));
+    </script>
+</body>
+
+</html>

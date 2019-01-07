@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		function rej(name)
+		 {
+			var max =-1;
+			var tem;
+			for ( var i=0;i<name.length-1;i++)
+			{
+				tem = Math.abs(name[i]-name[i+1]);
+				max = Math.max(max,tem);
+			}
+			return max;
+		}
+		alert(rej([1,2,3,4,5,7,8]))
+	</script>
+
+
+</body>
+</html>

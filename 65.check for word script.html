@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>check for word string</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function check(str) {
+            if (str.substring(str.length - 6, str.length) == 'Script') {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        alert(check("JavaScript"));
+        alert(check("rejneesh Script"));
+        alert(check("abcdeScripts1'"));
+    </script>
+
+</body>
+
+</html>

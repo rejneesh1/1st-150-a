@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Difference by 13</title>
+</head>
+
+<body>
+    Result: <span id="result"></span>
+</body>
+<script>
+    var num = prompt("enter number")
+    document.getElementById('result').innerHTML = difference(num)
+
+    function difference(n) {
+        if (n <= 13)
+            return 13 - n;
+        else
+            return (n - 13) * 2;
+    }
+</script>
+
+</html>

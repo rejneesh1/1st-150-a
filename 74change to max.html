@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>cahnge to max</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function changeToMax(intArray) {
+
+            var result = [];
+            var valueMax = Math.max(...intArray);
+
+            for (i = 0; i <= intArray.length - 1; i++) {
+                result[i] = valueMax;
+
+            }
+
+            return result;
+        }
+
+        alert(changeToMax([5,8,2]))
+    </script>
+    
+</body>
+
+</html>

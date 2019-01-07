@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>3 letter from back to front</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function attach(str) {
+            if (str.length > 3) {
+                return str.slice(-3) + str.slice(0, -3);
+            }
+            return str;
+        }
+        alert(attach("rejneesh"));
+        alert(attach("zenrays"));
+        alert(attach("to"));
+    </script>
+</body>
+
+</html>

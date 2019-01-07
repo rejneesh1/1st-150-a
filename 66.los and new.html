@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>check for los and new</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function check(str) {
+            if ((str.substring(0, 3) === "Los") ||
+                str.substring(0, 3) === "New") {
+                return str;
+            } else return " ";
+        }
+
+        alert(check("Los Angeles"));
+        alert(check("New York"));
+        alert(check("Sc"));
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search String</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function search(str) {
+            if (str.length < 4) {
+                return false;
+            }
+            var front = str.substring(0, 4);
+            if (front == 'Java') {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        alert(search("Javaclass"));
+        alert(search("Javascript"));
+        alert(search("Python"));
+    </script>
+</body>
+
+</html>

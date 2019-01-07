@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		function har(num,k)
+		 {
+		let result=0;
+		let temp =0;
+		for(var i=0;i<k-1;i++)
+		{
+			temp += num[i];
+		}
+		for (var i=k-1;i<num.length;i++)
+		{
+			temp += num[i];
+			if(temp>result)
+			{
+				result = temp;
+			}
+			temp -= num[i-k+1];
+		}
+		return result;
+		}
+		alert(har([1,2,3,4,5,15],2));
+	</script>
+
+</body>
+</html>

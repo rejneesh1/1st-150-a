@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Character occurence 2-4 times</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function check(string, char) {
+            var x = 0;
+            for (var i = 0; i < string.length; i++) {
+                if (string.charAt(i) == char) {
+                    x++;
+                }
+            }
+            return (x >= 2 && x <= 4);
+        }
+
+        alert(check("Malayalam", "a"));
+        alert(check("ind", "i"));
+        alert(check("Console", "o"));
+    </script>
+</body>
+
+</html>

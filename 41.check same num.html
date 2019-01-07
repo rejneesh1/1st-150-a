@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Check same number</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function check(x, y, z) {
+            if (x == y && y == z) {
+                return 30;
+            }
+
+            if (x == y || y == z || z == x) {
+                return 40;
+            }
+
+            return 20;
+        }
+        alert(check(1, 2, 2));
+        alert(check(9, 9, 9));
+        alert(check(1, 7, 5));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>first digit</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function firstElement(intArray) {
+
+            if (intArray.length <= 1) {
+                return false;
+            } else if (intArray[0] == 1 || intArray[intArray.length - 1] == 1) {
+                return true;
+            }
+            return false;
+
+        }
+        alert(firstElement([4,5,1]))
+        alert(firstElement([5,8,8]))        
+        alert(firstElement([1,2,3]))
+    </script>
+
+</body>
+
+</html>

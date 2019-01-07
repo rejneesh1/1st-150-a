@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>put comma in num</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function divide(a, b) {
+            if (a > 0 && b > 0) {
+                return (a / b).toString().replace(/\./g, ",");
+            }
+        }
+
+        alert(divide(2,3));
+        alert(divide(2,0));
+        alert(divide(2,2));
+    </script>
+</body>
+
+</html>

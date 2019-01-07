@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Guess Number</title>
+</head>
+
+<body>
+
+    <script>
+        var number = prompt("Enter any number between 1-10")
+        if (number == num()) {
+            document.write("Good Work !!!")
+        } else {
+            document.write("Number Not Matched !!!")
+        }
+
+        function num() {
+            var i = Math.random()
+            return Math.ceil(i * 10);
+        }
+    </script>
+</body>
+
+</html>

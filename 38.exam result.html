@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Character occurence 2-4 times</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function examResult(score, exam) {
+            if (score >= 90 && score <= 100) {
+                return "A+";
+            } else if (score >= 89 && score <= 100 && exam != "final") {
+                return "A+";
+            } else {
+                return false;
+            }
+        }
+
+        alert(examResult(79, " ")); 
+        alert(examResult(89, "final")); 
+        alert(examResult(89, " ")); 
+        alert(examResult(99, "final")); 
+    </script>
+</body>
+
+</html>

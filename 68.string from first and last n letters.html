@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>string from first and last n letters</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function check(str, n) {
+            if (str.length >= n) {
+                var one = str.substring(0, n);
+                var two = str.slice(-n);
+                return one + two;
+            } else return "To short string";
+        }
+
+        alert(check("rejneesh", 1));
+        alert(check("zenrays", 2));
+        alert(check("india", 3));
+        alert(check("hello", 10));
+    </script>
+
+</body>
+
+</html>
+                

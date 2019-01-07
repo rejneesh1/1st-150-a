@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Current Day And Time</title>
+	<script>
+		var dateTime= new Date;
+		function day(){
+
+  			var day=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  			document.getElementById("day").innerHTML="Today is " + day[dateTime.getDay()];
+		};
+			
+		function time(){
+  				
+  			var hours=dateTime.getHours();
+  			var minutes=dateTime.getMinutes();
+  			var seconds=dateTime.getSeconds();
+  			if (hours<12) {
+
+  				if (hours<10) {
+
+  					document.getElementById("time").innerHTML="Time is " + "0"+hours + " A.M " + minutes  + ":" + seconds;
+  				} else {
+  					document.getElementById("time").innerHTML="Time is " + hours + " A.M " + minutes  + ":" + seconds;
+  				}
+
+  				
+  			}
+  			else{
+  				hours -= 12;
+  				document.getElementById("time").innerHTML="Time is " + hours + " P.M " + minutes  + ":" + seconds;
+  			}
+  			
+  			
+		};
+
+	</script>
+</head>
+<body onload="day(),time()">
+	<main>
+		<p id="day"></p>
+		<p id="time"></p>
+	</main>
+
+	
+</body>
+</html>

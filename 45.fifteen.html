@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>fifteen</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function fifteen(x, y) {
+            if (x == 15 || y == 15) {
+                return true;
+            } else if (x + y == 15 || x - y == 15) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        alert(fifteen(23, 15));
+        alert(fifteen(23, 51));
+        alert(fifteen(15, 10));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>convet to time</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function time(num) {
+            var hours = Math.floor(num / 60);
+            var minutes = num % 60;
+            return hours + ":" + minutes;
+        }
+
+        alert(time(50));
+        alert(time(500));
+        alert(time(50000));
+    </script>
+</body>
+
+</html>

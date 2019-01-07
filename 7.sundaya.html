@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Year Starting with Sunday</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        var startYear = prompt("Enter Starting Year");
+        var endYear = prompt("Enter Ending Year");
+        sunday(startYear, endYear);
+
+        function sunday(sy, ey) {
+            for (var i = sy; i <= ey; i++) {
+
+                var x = new Date(i, 0, 1)
+
+                if (x.getDay() == 0) {
+                    document.write(i + " starts with Sunday<br>");
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

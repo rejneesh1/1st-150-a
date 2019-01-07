@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Max value in the range</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function findMax(x, y) {
+            if (x >= 40 && y <= 60) {
+                var val = 0
+                if (x > y) {
+                    val = x;
+                } else
+                    val = y;
+                return val;
+            } else
+                return false;
+        }
+
+        alert(findMax(48, 60));
+        alert(findMax(25, 60));
+        alert(findMax(55, 55));
+    </script>
+</body>
+
+</html>

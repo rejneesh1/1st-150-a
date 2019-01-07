@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>swap</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+        function swap(numArray) {
+            [numArray[0], numArray[numArray.length - 1]] = [numArray[numArray.length - 1], numArray[0]];
+            return numArray;
+        }
+        alert(swap([1, 2, 3, 4]));
+        alert(swap([0, 2, 1]));
+        alert(swap([3]));
+    </script>
+
+</body>
+
+</html>
